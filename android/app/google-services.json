@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "503736221490",
+    "project_id": "ween-2d99d",
+    "storage_bucket": "ween-2d99d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503736221490:android:035ee505099f8065d5212b",
+        "android_client_info": {
+          "package_name": "com.example.ween"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlvjvqDiXEPYmWj8p7FUEhiiki9DkFXA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
