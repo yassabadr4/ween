@@ -37,7 +37,7 @@ class _OnBoardingState extends State<OnBoarding> {
           if (isCustomer == true) {
             GoRouter.of(context).push(AppRouter.kHomeView);
           } else if (isOwner == true) {
-            GoRouter.of(context).push(AppRouter.kLogInPage);
+            GoRouter.of(context).push(AppRouter.kPhoneAuthView);
           } else {}
           setState(() {});
         },

@@ -3,10 +3,10 @@ import 'package:go_router/go_router.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:ween/core/componants/buttons/custom_botton.dart';
 import 'package:ween/core/componants/colors.dart';
-import 'package:ween/features/Auth/widgets/custom_password.dart';
-import 'package:ween/features/Auth/widgets/custom_text_from_field.dart';
+import 'package:ween/features/Auth/presentation/views/widgets/custom_password.dart';
+import 'package:ween/features/Auth/presentation/views/widgets/custom_text_from_field.dart';
 
-import '../../core/function/app_router.dart';
+import '../../../../core/function/app_router.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

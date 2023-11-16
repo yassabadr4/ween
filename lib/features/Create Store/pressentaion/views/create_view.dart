@@ -6,7 +6,7 @@ import 'package:ionicons/ionicons.dart';
 
 import '../../../../core/componants/buttons/custom_botton.dart';
 import '../../../../core/componants/colors.dart';
-import '../../../Auth/widgets/custom_text_from_field.dart';
+import '../../../Auth/presentation/views/widgets/custom_text_from_field.dart';
 
 class CreateView extends StatefulWidget {
   const CreateView({super.key});

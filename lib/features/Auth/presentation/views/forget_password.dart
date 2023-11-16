@@ -4,10 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ween/core/componants/buttons/custom_botton.dart';
 import 'package:ween/core/function/app_router.dart';
-import 'package:ween/features/Auth/widgets/custom_text_from_field.dart';
+import 'package:ween/features/Auth/presentation/views/widgets/custom_text_from_field.dart';
 
-
-var verifiId= '';
+var verifiId = '';
 
 FirebaseAuth auth = FirebaseAuth.instance;
 var otp = '';
@@ -22,12 +21,6 @@ class ForgetPassword extends StatefulWidget {
 class _ForgetPasswordState extends State<ForgetPassword> {
   final GlobalKey<FormState> formKey = GlobalKey();
   final TextEditingController phoneController = TextEditingController();
-
-
-
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -50,21 +43,23 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 title: 'ارسال',
                 onPressd: () {
                   if (formKey.currentState!.validate()) {
-                     sendOtp({phone}) async {
+                    sendOtp({phone}) async {
                       await auth.verifyPhoneNumber(
-                        phoneNumber:phone,
-                        verificationCompleted: (phoneAuthCredential)async{
+                        phoneNumber: phone,
+                        verificationCompleted: (phoneAuthCredential) async {
                           await auth.signInWithCredential(phoneAuthCredential);
                         },
-                        verificationFailed: (FirebaseAuthException e){
+                        verificationFailed: (FirebaseAuthException e) {
                           print(e.toString());
                         },
-                        codeSent: (String? verificationId , int? resendToken){
+                        codeSent: (String? verificationId, int? resendToken) {
                           verifiId = verificationId.toString();
                         },
-                        codeAutoRetrievalTimeout: (value){},);
+                        codeAutoRetrievalTimeout: (value) {},
+                      );
                     }
-                    GoRouter.of(context).push(AppRouter.kOtpPage);
+
+                    GoRouter.of(context).push(AppRouter.kOtpView);
                   }
                 },
               ),

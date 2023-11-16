@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ween/core/componants/colors.dart';
 import 'package:ween/core/function/app_router.dart';
-import 'package:ween/features/Auth/signup_page.dart';
-import 'package:ween/features/Auth/widgets/custom_password.dart';
-import 'package:ween/features/Auth/widgets/custom_text_from_field.dart';
+import 'package:ween/features/Auth/presentation/views/signup_page.dart';
+import 'package:ween/features/Auth/presentation/views/widgets/custom_password.dart';
+import 'package:ween/features/Auth/presentation/views/widgets/custom_text_from_field.dart';
 
-import '../../core/componants/buttons/custom_botton.dart';
+import '../../../../core/componants/buttons/custom_botton.dart';
 
 class LogInPage extends StatefulWidget {
   const LogInPage({super.key});
